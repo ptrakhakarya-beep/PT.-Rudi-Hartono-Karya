@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FiPhone, FiMail } from 'react-icons/fi'
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 

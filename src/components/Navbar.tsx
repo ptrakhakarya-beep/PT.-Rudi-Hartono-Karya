@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -12,7 +12,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import WorkspacesOutlinedIcon from "@mui/icons-material/WorkspacesOutlined";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
-import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);

@@ -106,7 +106,7 @@ const Services = () => {
       </h2>
       {/* Services Cards */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-        {services.map((srv, idx) => (
+        {services.map((srv) => (
           <div
             key={srv.title}
             className={`
