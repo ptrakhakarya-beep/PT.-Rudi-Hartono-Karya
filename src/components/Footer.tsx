@@ -90,7 +90,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-white/60">
-          <p>© {new Date().getFullYear()} PT. Gunung Mujur Indonesia. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} PT. RUDI HARTONO KARYA. All rights reserved.</p>
           <p>Developed by your team.</p>
         </div>
       </div>
