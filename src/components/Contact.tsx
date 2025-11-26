@@ -1,9 +1,11 @@
+import { FiPhone, FiMail } from 'react-icons/fi'
+import { FaLocationDot } from "react-icons/fa6";
 
 
 const Contact = () => {
   return (
     <section id="contact" className="w-full py-24 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto bg-primary backdrop-blur-md rounded-2xl px-8 py-16">
         <h2 className="text-white text-4xl md:text-5xl font-semibold mb-12 font-serif">
           Hubungi Kami
         </h2>
@@ -12,7 +14,9 @@ const Contact = () => {
           {/* Info */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-white text-lg font-medium mb-2">Email</h3>
+                <h3 className="text-white text-lg font-medium mb-2 flex items-center gap-2">
+                  <FiMail className="text-xl" /> Email
+                </h3>
                 <a
                   href="mailto:info@perusahaan.com"
                   className="text-gray-300 hover:text-white transition text-sm break-all"
@@ -21,7 +25,10 @@ const Contact = () => {
                 </a>
               </div>
               <div>
-                <h3 className="text-white text-lg font-medium mb-2">Telepon</h3>
+                  
+                <h3 className="text-white text-lg font-medium mb-2 flex items-center gap-2">
+                  <FiPhone className="text-xl" /> Telepon
+                </h3>
                 <a
                   href="https://wa.me/6281233040137"
                   className="text-gray-300 hover:text-white transition text-sm"
@@ -29,12 +36,17 @@ const Contact = () => {
                   +62 812-3304-0137 (Rudi Hartono)
                 </a>
                 <br />
-                <a href="https://wa.me/6282131553325" className="text-gray-300 hover:text-white transition text-sm">
+                <a
+                  href="https://wa.me/6282131553325"
+                  className="text-gray-300 hover:text-white transition text-sm"
+                >
                   +62 821-3155-3325 (Usamah)
                 </a>
               </div>
               <div>
-                <h3 className="text-white text-lg font-medium mb-2">Alamat</h3>
+                <h3 className="text-white text-lg font-medium mb-2 flex items-center gap-2">
+                  <FaLocationDot className="text-xl" /> Alamat
+                </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Gg. V No.25, Madyopuro, Kec. Kedungkandang, Kota Malang, Jawa Timur 65138
                 </p>

@@ -1,4 +1,3 @@
-
 import { FiPhone, FiMail } from 'react-icons/fi'
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 
@@ -19,11 +18,11 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-[#121212] text-white">
+    <footer className="bg-[#F2000C] text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-5">
-            <p className='text-[#6BB1C4] font-bold text-2xl'>PT. RUDI HARTONO KARYA</p>
+            <p className="text-primary font-bold text-2xl">PT. RUDI HARTONO KARYA</p>
             <p className="text-white/90 leading-relaxed">
               Gg. V No.25, Madyopuro, Kec. Kedungkandang, Kota Malang, Jawa Timur 65138
             </p>
@@ -64,7 +63,7 @@ const Footer = () => {
 
           {/* Produk */}
           <div>
-            <h4 className="text-[#6BB1C4] font-semibold text-xl mb-5">Jasa</h4>
+            <h4 className="text-primary font-semibold text-xl mb-5">Jasa</h4>
             <ul className="space-y-3">
               {produk.map((p) => (
                 <li key={p} className="text-white/90">{p}</li>
@@ -74,7 +73,7 @@ const Footer = () => {
 
           {/* Jam Layanan */}
           <div>
-            <h4 className="text-[#6BB1C4] font-semibold text-xl mb-5">Jam Layanan</h4>
+            <h4 className="text-primary font-semibold text-xl mb-5">Jam Layanan</h4>
             <ul className="space-y-2">
               {jamLayanan.map((row) => (
                 <li key={row.day} className="flex items-center justify-between text-white/90">

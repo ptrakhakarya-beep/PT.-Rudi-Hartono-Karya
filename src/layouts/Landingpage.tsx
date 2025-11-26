@@ -1,7 +1,7 @@
 
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
-import backgroundImage from "../assets/background.jpg";
+import backgroundImage from "../assets/background.png";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -12,7 +12,7 @@ const Landingpage = () => {
       <Navbar />
 
       <div
-        className="relative pb-24 min-h-screen bg-gradient-to-br from-slate-800 via-slate-700 to-slate-400"
+        className="relative pb-24 min-h-screen "
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -99,7 +99,7 @@ const Landingpage = () => {
       </section>
       </div>
 
-        <div className=" bg-gradient-to-b from-[#213845] via-[#375B65] to-[#4F8391]">
+        <div className=" bg-white">
 
       <section className="relative z-10">
         <Project />

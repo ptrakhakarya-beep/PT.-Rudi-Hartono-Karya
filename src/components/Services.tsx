@@ -96,10 +96,10 @@ const Services = () => {
     <section id="services">
 
     <div className="max-w-7xl mx-auto bg-white/70 pt-20 pb-28 rounded-2xl px-8 relative">
-      <span className="inline-block bg-[#375B65] text-white text-xs font-semibold px-4 py-1 rounded-full mb-8 tracking-wide">
+      <span className="inline-block bg-primary text-white text-xs font-semibold px-4 py-1 rounded-full mb-8 tracking-wide">
         SERVICES
       </span>
-      <h2 className="text-[#213845] text-3xl md:text-5xl font-bold mb-12 max-w-3xl">
+      <h2 className="text-gray-800 text-3xl md:text-5xl font-bold mb-12 max-w-3xl">
         We are multi-service
         <br />
         company under one roof.
@@ -114,7 +114,7 @@ const Services = () => {
               hover:bg-white/70 backdrop-blur-md
               transition
               min-w-[250px]
-              bg-[#375B65] hover:border-2 hover:border-white hover:shadow-xl
+              bg-primary hover:border-2 hover:border-white hover:shadow-xl
               hover:[box-shadow:0_8px_32px_0_rgba(217,255,62,0.10)]
               group
             `}

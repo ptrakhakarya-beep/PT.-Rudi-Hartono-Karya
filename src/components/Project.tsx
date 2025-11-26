@@ -34,7 +34,7 @@ const projects = [
 ];
 
 const Arrow = () => (
-  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-neutral-300 group-hover:bg-neutral-100 transition">
+  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-white/30 group-hover:bg-white/10 transition">
     <svg
       width="14"
       height="14"
@@ -70,7 +70,7 @@ const Project = () => {
     <>
       <section id="projects" className="w-full py-24 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-center text-5xl md:text-7xl font-serif mb-16">
+          <h2 className="text-black text-center text-5xl md:text-7xl font-serif mb-16">
             Our Projects
           </h2>
 
@@ -105,15 +105,15 @@ const Project = () => {
                       ${reverse ? "md:mr-auto" : "md:ml-auto"}
                     `}
                   >
-                    <div className="group bg-white rounded-md h-[230px] md:h-[300px] p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                    <div className="group bg-primary rounded-md h-[230px] md:h-[300px] p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
                       <div>
-                        <span className="block text-[11px] tracking-widest uppercase mb-3 text-neutral-500">
+                        <span className="block text-[11px] tracking-widest uppercase mb-3 text-white">
                           {p.category}
                         </span>
-                        <h3 className="text-xl md:text-2xl font-medium text-neutral-900 mb-4">
+                        <h3 className="text-xl md:text-2xl font-medium text-white mb-4">
                           {p.title}
                         </h3>
-                        <p className="text-sm leading-relaxed text-neutral-600 line-clamp-4">
+                        <p className="text-sm leading-relaxed text-white line-clamp-4">
                           {p.desc}
                         </p>
                       </div>
@@ -122,7 +122,7 @@ const Project = () => {
                         <button
                           type="button"
                           onClick={() => handleOpen(i)}
-                          className="inline-flex items-center gap-3 text-sm font-medium text-neutral-900 group-hover:text-neutral-700 transition"
+                          className="inline-flex items-center gap-3 text-sm font-medium text-white group-hover:text-white transition"
                         >
                           See More
                           <Arrow />

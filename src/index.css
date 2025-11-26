@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-bg-primary:#093FB4;
+  --color-bg-secondary:#ffffff;
+  --color-text-primary:#ffffff;
+  --color-text-secondary:#ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
+.bg-primary { background-color: var(--color-bg-primary); }
+.bg-secondary { background-color: var(--color-bg-secondary); }
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.bg-text-primary { background-color: var(--color-text-primary); }
+.border-primary { border-color: var(--color-bg-primary); }
+.border-text-primary { border-color: var(--color-text-primary); }

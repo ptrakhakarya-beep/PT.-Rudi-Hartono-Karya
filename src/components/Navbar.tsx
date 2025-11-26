@@ -12,6 +12,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import WorkspacesOutlinedIcon from "@mui/icons-material/WorkspacesOutlined";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
+import logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -35,14 +36,11 @@ const Navbar = () => {
           >
             <div className="w-10 h-10 flex items-center justify-center">
               {/* Placeholder logo bars */}
-              <div className="flex flex-col gap-[3px] w-8">
-                <span className="block h-[3px] bg-white"></span>
-                <span className="block h-[3px] bg-white w-6"></span>
-                <span className="block h-[3px] bg-white w-4"></span>
-                <span className="block h-[3px] bg-white w-2"></span>
+              <div className="flex flex-col gap-[3px] w-20 h-10">
+                <img src={logo} alt="Logo" />
               </div>
             </div>
-            <h3 className="text-sm md:text-base font-medium tracking-wide text-white ">
+            <h3 className="text-sm md:text-base font-medium tracking-wide text-secondary text-primary">
               PT. RUDI HARTONO KARYA
             </h3>
           </a>
@@ -66,10 +64,8 @@ const Navbar = () => {
                   {item.text}
                 </span>
                 <span
-                  className={`absolute left-0 -bottom-0.5 h-[2px] bg-[#6BB1C4] transition-all duration-300 ${
-                    active === item.text
-                      ? "w-full"
-                      : "w-0 group-hover:w-full"
+                  className={`absolute left-0 -bottom-0.5 h-[2px] bg-text-primary transition-all duration-300 ${
+                    active === item.text ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
               </a>
@@ -89,7 +85,7 @@ const Navbar = () => {
                 Contact
               </span>
               <span
-                className={`absolute left-0 -bottom-0.5 h-[2px] bg-[#6BB1C4] transition-all duration-300 ${
+                className={`absolute left-0 -bottom-0.5 h-[2px] bg-text-primary transition-all duration-300 ${
                   active === "Contact" ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />
