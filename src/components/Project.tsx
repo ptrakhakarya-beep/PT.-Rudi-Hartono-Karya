@@ -139,6 +139,8 @@ const Project = () => {
                         src={p.image}
                         alt={p.title}
                         className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.04]"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>
@@ -229,6 +231,7 @@ const Project = () => {
                       alt={`${current.title} ${idx + 1}`}
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.03]"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 ))}
