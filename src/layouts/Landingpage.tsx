@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import backgroundImage from "../assets/background.png";
+import backgroundContact from "../assets/background2.jpg";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -31,11 +32,7 @@ const Landingpage = () => {
                 You'll Love
               </h1>
               <p className="text-gray-200 text-base md:text-lg max-w-xl mb-8">
-                Kami adalah perusahaan jasa konstruksi teknik sipil yang berfokus
-                pada perencanaan dan perancangan proyek secara komprehensif. Dengan
-                tim profesional dan pengalaman dalam berbagai jenis proyek kami
-                memastikan setiap pekerjaan selesai dengan perencanaan matang,
-                material berkualitas, dan eksekusi tepat waktu.
+                We are a civil engineering construction company focused on comprehensive project planning and design. With a professional team and extensive experience across various types of projects, we ensure every task is completed with meticulous planning, high-quality materials, and on-time execution.
               </p>
               <a
                 href="#contact"
@@ -61,14 +58,13 @@ const Landingpage = () => {
             </div>
             <div className="flex flex-col items-end mt-8 md:mt-0">
               <span className="text-white text-[72px] md:text-[96px] font-bold leading-none drop-shadow-lg">
-                32+
+                50+
               </span>
               <span className="text-white text-2xl md:text-3xl font-medium mb-4">
                 Projects
               </span>
               <p className="text-gray-200 text-sm max-w-xs mb-2 text-right">
-                Setiap proyek kami kerjakan dengan pendekatan teknis komprehensif
-                dari desain hingga pengawasan lapangan.
+                Each project is carried out through a thorough technical approach, from design to on-site supervision.
               </p>
               <a
                 href="#projects"
@@ -105,8 +101,22 @@ const Landingpage = () => {
         <Project />
       </section>
 
-      <section className="relative z-10">
-        <Contact />
+      <section style={{
+          backgroundImage: `url(${backgroundContact})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }} className="relative py-24 mt-20">
+        <div
+    className="absolute inset-0"
+    style={{
+      background: "linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0))",
+    }}
+  />
+
+  {/* Konten */}
+  <div className="">
+    <Contact />
+  </div>
       </section>
         </div>
 

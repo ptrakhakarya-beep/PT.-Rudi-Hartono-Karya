@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --color-bg-primary:#093FB4;
+  --color-bg-primary:#C52833;
   --color-bg-secondary:#ffffff;
   --color-text-primary:#ffffff;
   --color-text-secondary:#ffffff;
@@ -12,6 +12,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+
 
 .bg-primary { background-color: var(--color-bg-primary); }
 .bg-secondary { background-color: var(--color-bg-secondary); }

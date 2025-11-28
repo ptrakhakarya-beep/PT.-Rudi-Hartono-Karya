@@ -2,7 +2,7 @@ import React from "react";
 
 const services = [
   {
-    title: "Projecting & Planning",
+    title: "Consulting & Planning",
     icon: (
       <svg
         width="48"
@@ -27,10 +27,10 @@ const services = [
         <path d="M24 16v16" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
-    description : "Perencanaan teknis yang matang untuk memastikan setiap proyek berjalan efektif, aman, dan sesuai standar.",
+    description : "comprehensive consulting and planning services to ensure your construction projects are well-structured from the start.",
   },
   {
-    title: "Consulting Engeneering",
+    title: "Implementation & Development",
     icon: (
       <svg
         width="48"
@@ -58,7 +58,7 @@ const services = [
       </svg>
     ),
     highlight: true,
-    description : "Layanan konsultasi rekayasa yang memberikan solusi teknis tepat guna untuk kebutuhan konstruksi Anda.",
+    description : "Efficient project execution and development services to bring your construction visions to life with precision and quality.",
   },
   {
     title: "Full Service Construction",
@@ -87,7 +87,7 @@ const services = [
         />
       </svg>
     ),
-    description : "Pelaksanaan konstruksi menyeluruh dengan pengawasan ketat dan kualitas yang dapat Anda andalkan.",
+    description : "Comprehensive construction planning and execution with strict supervision and quality you can rely on.",
   },
 ];
 
@@ -114,7 +114,7 @@ const Services = () => {
               hover:bg-white/70 backdrop-blur-md
               transition
               min-w-[250px]
-              bg-primary hover:border-2 hover:border-white hover:shadow-xl
+              bg-primary hover:shadow-xl
               hover:[box-shadow:0_8px_32px_0_rgba(217,255,62,0.10)]
               group
             `}

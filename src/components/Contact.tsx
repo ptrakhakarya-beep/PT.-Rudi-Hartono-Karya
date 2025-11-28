@@ -18,10 +18,10 @@ const Contact = () => {
                   <FiMail className="text-xl" /> Email
                 </h3>
                 <a
-                  href="mailto:info@perusahaan.com"
+                  href="mailto:rudihartonokarya@gmail.com"
                   className="text-gray-300 hover:text-white transition text-sm break-all"
                 >
-                  info@perusahaan.com
+                  rudihartonokarya@gmail.com
                 </a>
               </div>
               <div>

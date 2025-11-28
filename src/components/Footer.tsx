@@ -18,7 +18,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-[#F2000C] text-white">
+    <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-5">
@@ -50,7 +50,7 @@ const Footer = () => {
             {/* Sosial media (opsional) */}
             <div className="space-y-3 pt-2">
               <a href="#" className="flex items-center gap-3 text-white/90 hover:text-white">
-                <FaInstagram className="text-2xl" /> rudyhartonokarya
+                <FaInstagram className="text-2xl" /> rudihartonokarya
               </a>
               <a href="#" className="flex items-center gap-3 text-white/90 hover:text-white">
                 <FaFacebookF className="text-2xl" /> PT. RUDI HARTONO KARYA
