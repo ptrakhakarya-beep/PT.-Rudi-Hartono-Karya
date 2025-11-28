@@ -19,9 +19,9 @@ import boardingSchool12 from "../assets/PONDOK/Pondok (12).png"
 import boardingSchool13 from "../assets/PONDOK/Pondok (13).png"
 import boardingSchool14 from "../assets/PONDOK/Pondok (14).png"
 import boardingSchool15 from "../assets/PONDOK/Pondok (15).png"
-import road1 from "../assets/JALAN/Jalan (1).jpeg";
-import road2 from "../assets/JALAN/Jalan (2).jpg";
-import road3 from "../assets/JALAN/Jalan (3).jpg";
+import road1 from "../assets/JALAN/Jalan1.jpeg";
+import road2 from "../assets/JALAN/Jalan2.jpg";
+import road3 from "../assets/JALAN/Jalan3.jpg";
 import road4 from "../assets/JALAN/Jalan4.jpg";
 import road5 from "../assets/JALAN/Jalan5.jpg";
 import campus1 from "../assets/GEDUNG KAMPUS/Kampus (1).png";
