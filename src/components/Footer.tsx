@@ -28,10 +28,10 @@ const Footer = () => {
             </p>
             <div className="space-y-2">
               <a
-                href="mailto:info@perusahaan.com"
+                href="mailto:rudihartonokarya@gmail.com"
                 className="flex items-center gap-3 text-white/90 hover:text-white"
               >
-                <FiMail className="text-xl" /> info@perusahaan.com
+                <FiMail className="text-xl" /> rudihartonokarya@gmail.com
               </a>
               <a
                 href="https://wa.me/6281233040137"
