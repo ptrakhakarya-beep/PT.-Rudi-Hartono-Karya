@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { motion, type Variants } from "framer-motion";
 
-const fadeUp : Variants = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
   show: {
     opacity: 1,
@@ -54,9 +54,10 @@ const Landingpage = () => {
               </h1>
 
               <p className="text-gray-200 text-base md:text-lg max-w-xl mb-8">
-                We are a civil engineering construction company focused on comprehensive
-                project planning and design. With a professional team and extensive experience,
-                we ensure every task is completed with high standards.
+                We are a civil engineering construction company focused on
+                comprehensive project planning and design. With a professional
+                team and extensive experience, we ensure every task is completed
+                with high standards.
               </p>
 
               <a
@@ -65,8 +66,18 @@ const Landingpage = () => {
               >
                 CONTACT US
                 <span className="w-7 h-7 flex items-center justify-center rounded-full border border-white/30 ml-2">
-                  <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 8h6M9 5l3 3-3 3" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      d="M5 8h6M9 5l3 3-3 3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </span>
               </a>
@@ -76,9 +87,12 @@ const Landingpage = () => {
               <span className="text-white text-[72px] md:text-[96px] font-bold leading-none drop-shadow-lg">
                 50+
               </span>
-              <span className="text-white text-2xl md:text-3xl font-medium mb-4">Projects</span>
+              <span className="text-white text-2xl md:text-3xl font-medium mb-4">
+                Projects
+              </span>
               <p className="text-gray-200 text-sm max-w-xs mb-2 text-right">
-                Each project is executed with technical excellence from planning to supervision.
+                Each project is executed with technical excellence from planning
+                to supervision.
               </p>
 
               <a
@@ -87,8 +101,18 @@ const Landingpage = () => {
               >
                 SEE ALL PROJECTS
                 <span className="w-6 h-6 flex items-center justify-center rounded-full border border-white/30 ml-1">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M4 7h6M8 4l3 3-3 3" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      d="M4 7h6M8 4l3 3-3 3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </span>
               </a>
@@ -124,7 +148,7 @@ const Landingpage = () => {
         </motion.section>
 
         {/* CONTACT */}
-        <motion.section
+        <section
           id="contact"
           className="relative py-24 mt-20"
           style={{
@@ -132,10 +156,6 @@ const Landingpage = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
         >
           <div
             className="absolute inset-0"
@@ -144,11 +164,17 @@ const Landingpage = () => {
                 "linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0))",
             }}
           />
-
-          <div className="relative">
-            <Contact />
-          </div>
-        </motion.section>
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <div className="relative">
+              <Contact />
+            </div>
+          </motion.div>
+        </section>
       </div>
 
       <Footer />
