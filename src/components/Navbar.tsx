@@ -41,7 +41,7 @@ const Navbar = () => {
               </div>
             </div>
             <h3 className="text-sm md:text-base font-medium tracking-wide text-secondary text-primary">
-              PT. RUDI HARTONO KARYA
+              PT. RAKHA
             </h3>
           </a>
 

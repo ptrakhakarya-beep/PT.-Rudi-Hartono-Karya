@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-5">
-            <p className="text-primary font-bold text-2xl">PT. RUDI HARTONO KARYA</p>
+            <p className="text-primary font-bold text-xl">PT. RUDI HARTONO KARYA (RAKHA) </p>
             <p className="text-white/90 leading-relaxed">
               Gg. V No.25, Madyopuro, Kec. Kedungkandang, Kota Malang, Jawa Timur 65138
             </p>
@@ -90,7 +90,6 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-white/60">
           <p>© {new Date().getFullYear()} PT. RUDI HARTONO KARYA. All rights reserved.</p>
-          <p>Developed by your team.</p>
         </div>
       </div>
     </footer>
