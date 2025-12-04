@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -24,6 +24,30 @@ const Navbar = () => {
     { text: "Projects", icon: <WorkspacesOutlinedIcon />, href: "#projects" },
     { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = menuOptions.map((item) => {
+        const element = document.getElementById(item.href.substring(1));
+        return { name: item.text, element };
+      });
+
+      let currentActive = "Home";
+      sections.forEach(({ name, element }) => {
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom > 100) {
+            currentActive = name;
+          }
+        }
+      });
+
+      setActive(currentActive);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav className="navbar w-full fixed top-0 left-0 z-50">
