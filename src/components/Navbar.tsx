@@ -60,7 +60,7 @@ const Navbar = () => {
           >
             <div className="w-10 h-10 flex items-center justify-center">
               {/* Placeholder logo bars */}
-              <div className="flex flex-col gap-[3px] w-20 h-10">
+              <div className="flex flex-col gap-[3px] w-20 h-10 items-center justify-center">
                 <img src={logo} alt="Logo" />
               </div>
             </div>
